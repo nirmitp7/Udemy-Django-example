@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDFF7A;
+    color:#24272B;
+    border: 40px solid #172A3A;
+    margin: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%
+  }
+  
+  form{
+    font-size: 1.5em;
+  }
+  
+  #sub{
+    background-color: #F9C846;
+    border-radius: 10px;
+  }
+  

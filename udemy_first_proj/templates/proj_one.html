@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{% static "css/proj_one.css" %}">
+    <title>This is project one</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure facere quidem provident sed quis itaque mollitia, aliquid et reprehenderit reiciendis aliquam, cum libero blanditiis molestiae delectus labore, illum eveniet.</p>
+
+{% if k_one %}
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+    </thead>
+    {%for tmp in k_one%}
+<tr>
+    <td>{{tmp.first_nm}}</td>
+    <td>{{tmp.email}}</td>
+</tr>
+{%endfor%}
+</table>
+
+{%else%}
+<p>No record found</p>
+{%endif%}
+
+
+</body>
+</html>
